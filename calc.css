@@ -1,0 +1,90 @@
+html, body{
+    background-color: #b67f7f;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b67f7f;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 44px;
+    color: black;
+    font-family: "Arial";
+    text-decoration: underline;
+    margin-bottom: 444px; /* Espaço entre o título e a calculadora */
+}
+
+.calculadora{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(78, 78, 78);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #333;
+}
+
+#resultado{
+    padding: 10px;
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+}
+    
+
+.bot {
+    margin: 3px 0;
+}
+
+.bot button {
+    width: 52px;
+    height: 52px;
+    margin: 3px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.bot button:hover {
+    background-color: #ddd;
+}
+
+.bot button:active {
+    background-color: #ccc;
+    transform: scale(0.98);
+}
+
+.bot button:nth-child(4n) {
+    background-color: #f9a825; /* Cor para os botões de operação */
+    color: white;
+}
+
+.bot button:nth-child(4n):hover {
+    background-color: #f57f17;
+}
+
+
+/* 
